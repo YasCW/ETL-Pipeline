@@ -8,6 +8,8 @@ The goal was to mimic an integration programme typical within enterprise environ
 
 The input file is a CSV, mirroring a legacy-type system, and the output is an expected XML defined by a DTD located in src\com\cogniwire\etlPipeline\voucherPatterns.xsd. The XSD was converted into Java classes using the schema binding tool XJC as a one-off activity, and these elements were marshalled into an XML object model, before being finally exported into an XML file in the output folder. 
 
+For database instead of file system exchanges, SQL could have been used with the approproprite JDBC driver. For simplicity sake, and avoiding the prequisite for database platforms in a demo, file systems were chosen.
+
 ## Dependency Management
 
 The tool was built in Java 21 and leveraged libraries from Jakarta, included in the .\lib folder. 
